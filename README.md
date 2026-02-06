@@ -65,5 +65,3 @@ Shortest Path: Raidurg -> HITEC City -> Durgam Cheruvu -> Madhapur -> Peddamma G
 
 ## Author
 Sonali-b23
-
-If you want, I can also help you create badges or add screenshots. Would you like that?
