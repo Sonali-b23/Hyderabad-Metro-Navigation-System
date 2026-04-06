@@ -1,67 +1,110 @@
 # Hyderabad Metro Navigation System
 
-A robust Java-based console application designed to help users navigate the Hyderabad Metro rail network efficiently. The system models metro stations and their connections using a weighted graph, enabling calculation of shortest routes based on distance or travel time.
+A robust **Java-based console application** designed to help users efficiently navigate the Hyderabad Metro rail network. The system models metro stations and their interconnections using a **weighted graph**, enabling accurate computation of shortest routes based on distance or travel time.
+
+---
 
 ## Features
 
-- List all metro stations in the Hyderabad Metro map.
-- Display the metro map showing station connectivity with associated costs.
-- Calculate the shortest distance between any two stations.
-- Calculate the shortest travel time between any two stations.
-- Find and display the shortest path based on distance.
-- Find and display the shortest path based on time.
+* Display a complete list of metro stations in the network
+* Visualize station connectivity along with associated travel costs
+* Compute the shortest distance between any two stations
+* Estimate minimum travel time between selected stations
+* Determine the optimal route based on distance
+* Determine the fastest route based on time
+* Interactive, menu-driven console interface for ease of use
+* Input validation and basic error handling for invalid station entries
 
-## How it Works
+---
 
-The system represents the Hyderabad Metro network as a graph where:
+## How It Works
 
-- Nodes correspond to metro stations.
-- Edges correspond to direct connections between stations.
-- Weights on edges represent the cost or time to travel between stations.
+The application represents the metro network as a graph:
 
-Users interact through a menu-driven console interface to query the shortest distance, time, or route between specified source and destination stations.
+* **Nodes** → Metro stations
+* **Edges** → Direct connections between stations
+* **Weights** → Distance or time required to travel between stations
+
+The system uses efficient shortest-path algorithms like **Dijkstra’s Algorithm** to compute optimal routes. Users can interact with the program via a structured menu to retrieve distances, travel times, and paths between any two stations.
+
+---
 
 ## Sample Menu
-1. List all the stations in the map
-2. Show the metro map
-3. Get shortest distance from a source station to a destination station
-4. Get shortest time to reach from a source station to a destination station
-5. Get shortest path (distance-wise) to reach from a source station to a destination station
-6. Get shortest path (time-wise) to reach from a source station to a destination station
-7. Exit the menu
+
+1. List all stations in the metro network
+2. Display the metro map
+3. Find shortest distance between two stations
+4. Find shortest travel time between two stations
+5. Find shortest path (distance-based)
+6. Find shortest path (time-based)
+7. Exit
+
+---
 
 ## Example Usage
 
-**Finding shortest distance from Madhura Nagar to Moosapet**
-Minimum Cost: 30
-Shortest Path: Madhura Nagar -> Ameerpet -> S.R. Nagar -> ESI Hospital -> Erragadda -> Bharat Nagar -> Moosapet
+**Shortest Distance: Madhura Nagar → Moosapet**
 
-**Finding shortest time from Raidurg to Narayanguda**
-Minimum Cost: 58
-Shortest Path: Raidurg -> HITEC City -> Durgam Cheruvu -> Madhapur -> Peddamma Gudi -> Jubilee Hills Check Post -> Road No.5 Jubilee Hills -> Yusufguda -> Madhura Nagar -> Ameerpet -> MG Bus Station -> Sultan Bazar -> Narayanguda
+* Minimum Cost: 30
+* Path:
+  Madhura Nagar → Ameerpet → S.R. Nagar → ESI Hospital → Erragadda → Bharat Nagar → Moosapet
+
+**Shortest Time: Raidurg → Narayanguda**
+
+* Minimum Cost: 58
+* Path:
+  Raidurg → HITEC City → Durgam Cheruvu → Madhapur → Peddamma Gudi → Jubilee Hills Check Post → Road No.5 Jubilee Hills → Yusufguda → Madhura Nagar → Ameerpet → MG Bus Station → Sultan Bazar → Narayanguda
+
+---
 
 ## Technologies Used
 
-- Java programming language  
-- Graph data structures for modeling stations and routes  
-- Console-based user interface
+* **Java** (Core Programming)
+* **Graph Data Structures** (Adjacency List/Matrix)
+* **Dijkstra’s Algorithm** for shortest path computation
+* Console-based UI for user interaction
+
+---
 
 ## How to Run
 
-1. Clone or download the project repository.  
-2. Navigate to the project directory in the terminal or command prompt.  
-3. Compile the Java source file using the command:  
+1. Clone or download the repository
+2. Open terminal/command prompt and navigate to the project directory
+3. Compile the program:
+
+   ```
    javac MetroApp.java
-4. Run the application using the command:
+   ```
+4. Run the application:
+
+   ```
    java MetroApp
-5. Follow the on-screen menu instructions to interact with the metro navigation system.
+   ```
+5. Use the on-screen menu to explore metro routes
+
+---
 
 ## Project Highlights
 
-* Uses a weighted graph to model Hyderabad Metro stations and routes accurately.
-* Implements shortest path algorithms (such as Dijkstra’s algorithm) for route calculations.
-* Provides user-friendly text interface for metro route exploration.
-* Includes comprehensive station connectivity with weighted costs representing distance/time.
+* Accurate modeling of metro systems using weighted graphs
+* Efficient shortest path computation using optimized algorithms
+* Simple and user-friendly interface
+* Modular and scalable design for future enhancements
+
+---
+
+## Future Enhancements
+
+* GUI-based interface (JavaFX or Swing)
+* Real-time data integration (train timings, delays)
+* Fare calculation module
+* Multi-line interchange optimization
+* Mobile or web-based version
+
+---
 
 ## Author
-Sonali-b23
+
+**Sonali-b23**
+
+---
