@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyderabad Metro Navigator</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="page">
+    <h1 class="title">🚇 Hyderabad Metro Navigator</h1>
+    <p class="subtitle">Pick two stations to get the shortest route by distance and by time.</p>
+
+    <div class="form-row">
+      <div class="field">
+        <label for="from-select">From</label>
+        <select id="from-select"></select>
+      </div>
+      <div class="field">
+        <label for="to-select">To</label>
+        <select id="to-select"></select>
+      </div>
+    </div>
+
+    <button id="find-btn" class="primary-btn">Find Route</button>
+    <p id="message" class="message" hidden></p>
+
+    <div id="tabs" class="tabs" hidden>
+      <button class="tab-btn active" data-metric="distance">📏 Shortest by distance</button>
+      <button class="tab-btn" data-metric="time">⏱️ Shortest by time</button>
+    </div>
+
+    <div id="result-distance" class="result-card" hidden></div>
+    <div id="result-time" class="result-card" hidden></div>
+
+    <details class="all-stations">
+      <summary>View all stations</summary>
+      <p id="all-stations-list"></p>
+    </details>
+
+    <div class="footer">Made by Sonali &middot; served by a pure-Java backend (no frameworks)</div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
