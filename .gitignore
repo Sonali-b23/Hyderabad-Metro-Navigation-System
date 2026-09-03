@@ -1,0 +1,10 @@
+*.class
+.idea/
+*.iml
+out/
+
+# Python (Streamlit UI)
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
